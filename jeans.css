@@ -1,0 +1,126 @@
+body {
+    background-color: #D3E2E5;
+    color: #7C0000;
+    font-family: 'Inria Serif', serif;
+    margin: 64px 0 0 0;
+  }
+
+.body-text {
+  margin: 1rem;
+}
+  
+  h1{
+    font-size: 2.5rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+  
+  h3{
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  p{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  figcaption {
+    font-style: italic;
+ }
+
+  /* NAV -------------------------------------------------*/
+
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #D3E2E5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.75rem 1.25rem;
+  }
+
+#nav-bar nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;  
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  margin-left: auto;   
+}
+
+#nav-bar nav a:link,
+#nav-bar nav a:visited {
+  color: #7C0000;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+#nav-bar nav a:hover,
+#nav-bar nav a:focus {
+  text-decoration: underline;
+}
+
+  /* LOGO -------------------------------------------------*/
+
+  img.logo {
+    height: 36px;  
+    width: auto !important;
+    padding: 0;
+    display: block;
+    background: transparent; 
+  }
+
+/* FOOTER -------------------------------------------------*/
+footer a:link{
+  color: #7C0000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer {
+  align-content: center;
+}
+
+
+/* IMAGES -------------------------------------------------*/
+
+.jeans-example1,
+.jeans-example1,
+.jeans-example2 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 1rem;
+}
+
+.jeans-example1 figure,
+.jeans-example2 figure { 
+    text-align: center; 
+}
+
+.jeans-example1 img,
+.jeans-example2 img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+
+/* RESPONSIVE -------------------------------------------------*/
+
+@media (max-width: 1200px) {
+  .jeans-example1, .jeans-example2 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .jeans-example1, .jeans-example2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .jeans-example1, .jeans-example2 { grid-template-columns: 1fr; }
+}

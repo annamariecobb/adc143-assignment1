@@ -1,0 +1,182 @@
+body {
+  background-color: #D3E2E5;
+  color: #7C0000;
+  font-family: 'Inria Serif', serif;
+  margin: 64px 0 0 0;
+}
+
+.body-text {
+  margin: 1rem;
+}
+
+  
+  h1{
+    font-size: 2.5rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+  
+  h3{
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  ul {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    list-style-type: square;
+  }
+
+  figcaption {
+    font-style: italic;
+  }
+
+  .italic {
+    font-style: italic !important; 
+  }
+
+/* NAV -------------------------------------------------*/
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #D3E2E5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 1.25rem;
+}
+
+#nav-bar nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+img.logo {
+  height: 36px;  
+  width: auto !important;
+  padding: 0;
+  display: block;
+  background: transparent; 
+}
+
+#nav-bar nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;  
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  margin-left: auto;   
+}
+
+#nav-bar nav a:link,
+#nav-bar nav a:visited {
+  color: #7C0000;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+#nav-bar nav a:hover,
+#nav-bar nav a:focus {
+  text-decoration: underline;
+}
+
+/* LANDING PAGE IMAGE -------------------------------------------------*/
+
+.sewingboard {
+  max-width: 100%;
+  align-content: center;
+}
+
+/* FOOTER -------------------------------------------------*/
+footer a:link{
+  color: #7C0000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer {
+  align-content: center;
+}
+
+/* BUTTON -------------------- */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0 1.75rem;
+}
+
+#button-one, #toggle-hobbies {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.85rem 1.4rem;
+  border-radius: 9999px;
+  background: #7C0000;
+  color: #D3E2E5;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(124, 0, 0, 0.28);
+}
+
+#button-one:hover, #toggle-hobbies:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(124, 0, 0, 0.36);
+  background: #6a0000;
+}
+
+#button-one:active, #toggle-hobbies:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(124, 0, 0, 0.28);
+  opacity: 0.95;
+}
+
+#button-one:focus-visible, #toggle-hobbies:focus-visible {
+  outline: 3px solid #D3E2E5;
+  outline-offset: 3px;
+}
+
+/* BUTTON REACTIVE-------------------- */
+
+@media (max-width: 520px) {
+  #button-one, #toggle-hobbies {
+    width: calc(100% - 2rem);
+    max-width: 420px;
+  }
+}
+
+
+body.button-clicked {
+  background-color: #7C0000;
+  color: #D3E2E5;
+}
+
+body.button-clicked h1,
+body.button-clicked h2,
+body.button-clicked h3,
+body.button-clicked p,
+body.button-clicked a {
+  color: #D3E2E5;
+}
+
+body.button-clicked #button-one {
+  background: #D3E2E5;
+  color: #7C0000;
+}
+
+
+/* HOBBIES BUTTON -------------------- */
+
+.hidden {
+  display: none;
+}
